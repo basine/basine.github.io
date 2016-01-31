@@ -20,13 +20,15 @@
           {% endif %}
 		  
           <li>
-            <a href="https://de.linkedin.com/in/sabinegeithner" target="_blank">LinkedIn</a>
+            {% include icon-linkedin.html username=site.linkedin_username %}
           </li>
+		  
           <li>
-            <a href="{{ site.baseurl }}/imprint.html">Imprint</a>
+            <a href="{{ site.baseurl }}/imprint.html"><i class="svg-icon linkedin"></i>Imprint</a>
           </li>
 		  
         </ul>
+		
       </div>
 
       <div class="footer-col footer-col-2">
