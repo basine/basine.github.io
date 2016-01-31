@@ -11,7 +11,7 @@ email: info@sabinegeithner.de
 description: > # this means to ignore newlines until "baseurl:"
   Hello, I am Sabine Geithner - iOS Developer, Online Marketer and Biotechnologist. I work at Wire and organize UIKonf Berlin.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://basine.github.io" # the base hostname & protocol for your site
+url: "http://www.sabinegeithner.de" # the base hostname & protocol for your site
 twitter_username: sabinegeithner
 github_username:  basine
 

@@ -268,6 +268,8 @@
 .body-col-wrapper {
     font-size: 15px;
     margin-left: -$spacing-unit / 2;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
     @extend %clearfix;
 }
 
@@ -296,13 +298,14 @@
 
 @include media-query($on-laptop) {
     .body-col-1-2-left {
-		float: left;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
 	
     .body-col-1-2-right {
-		float: left;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
