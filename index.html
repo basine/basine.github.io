@@ -3,9 +3,19 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
+	<div class="body-col-wrapper" style="border-bottom:1px solid #e8e8e8; margin-bottom:25px;">
+		<div class="body-col body-col-1-2-left">
+			<p>Hello, I am Sabine.</p>
+			<p>I am a software developer at <a href="http://wire.com">Wire</a> where I work on the syncing engine of the iOS app. I started progamming in July 2013, mostly self-taught with online classes, then landed an internship at nxtbgthng for Berlin Philharmie's Digital Concerthall and started working for Wire in September 2014.</p>
+			<p>In my spare time I make use of my previous occupation as Online Marketer and organize <a href="http://www.uikonf.com" target="_blank">UIKonf</a> - Berlins independent iOS conference.</p>
+			<p>Before I came to Berlin, I was a scientist, searching for new treatments for cancer and other diseases.</p>
+				
+		</div>
+		<div class="body-col body-col-1-2-right">
+			<img src="http://www.sabinegeithner.de/wp-content/uploads/me-e1407353996571.jpg"/ style="float:right;">
+		</div>
+	</div>
+		
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -14,6 +24,9 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+		{% if post.description %}
+			<p>{{ post.description }}</p>
+		{% endif %}
       </li>
     {% endfor %}
   </ul>
