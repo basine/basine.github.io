@@ -1,6 +1,7 @@
 ---
-layout: post
 title: Einstieg in die Programmierung
+date: 2013-07-27 00:00:00 Z
+layout: post
 description: Wie ich 2013 mit dem Programmieren anfing.
 ---
 
